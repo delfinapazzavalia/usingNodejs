@@ -4,6 +4,3 @@ console.log(nombre)
 nombre = "Juan"
 console.log(nombre)
 
-
-nombre = "pedro"
-console.log(nombre)
