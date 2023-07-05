@@ -1,6 +1,10 @@
-let nombre = "Delfina"
-console.log(nombre)
+const mongoose = require('mongoose')
 
-nombre = "Juan"
-console.log(nombre)
+const url = 'mongodb://localhost:27017/base_personas' 
 
+mongoose.connect(url, {
+    usenewurlparse: true,
+    useunifiedtopology: true,
+})
+.then(db => console.log('db is connected'))
+.cathc(err => console.error(err)) 
